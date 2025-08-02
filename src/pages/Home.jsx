@@ -43,7 +43,7 @@ export default function Home({ user ,setuser}) {
       }
     };
     fetchMangas();
-  }, [mangas]);
+  }, []);
 
   function viewchaptershandler(id){
         navigate(`/manga/${id}`, {
