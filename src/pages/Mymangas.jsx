@@ -57,7 +57,7 @@ export default function Mymangas({ user }) {
         return (
             
           <div className="card mb-3" style={{width: "20rem"}}>
-            <img src={`http://localhost:8000${manga.coverImage}`} className="card-img-top" alt="..." />
+            <img src={`https://web-comic-site-backend.onrender.com${manga.coverImage}`} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{manga.title}</h5>
               <p className="card-text">{manga.description}</p>

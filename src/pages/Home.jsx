@@ -57,7 +57,7 @@ export default function Home({ user ,setuser}) {
   const displayingmangas=mangas.map(manga => 
     
           <div className="card" key={manga._id} style={{width: "18rem"}}>
-            <img src={`https://web-comic-site-backend.onrender.com/${manga.coverImage}`} className="card-img-top" alt="..." />
+            <img src={`https://web-comic-site-backend.onrender.com${manga.coverImage}`} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{manga.title}</h5>
               <p className="card-text">{manga.description}</p>

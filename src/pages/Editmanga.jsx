@@ -60,7 +60,7 @@ return(<>
   <div className="manga-header">
     <img
       className="manga-cover"
-      src={`http://localhost:8000${manga.coverImage}`}
+      src={`https://web-comic-site-backend.onrender.com${manga.coverImage}`}
       alt={`${manga.title} Cover`}
     />
     <h1 className="manga-title">{manga.title}</h1>
@@ -73,7 +73,7 @@ return(<>
       {chapters.map((chapter, index) => (
         <li key={index} className="chapter-item">
           <a
-            href={`http://localhost:8000${chapter}`}
+            href={`https://web-comic-site-backend.onrender.com${chapter}`}
             target="_blank"
             rel="noopener noreferrer"
             className="chapter-link"
