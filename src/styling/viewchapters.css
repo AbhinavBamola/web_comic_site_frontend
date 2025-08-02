@@ -1,0 +1,115 @@
+.view-chapters-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.manga-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.manga-cover {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}
+
+.manga-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.manga-description {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.chapters-list {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.chapters-list h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  color: #333;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 6px;
+}
+
+.chapter-item {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.chapter-item:last-child {
+  border-bottom: none;
+}
+
+.chapter-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 500;
+}
+
+.chapter-link:hover {
+  text-decoration: underline;
+}
+.upload-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fefefe;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.upload-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.upload-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.upload-button {
+  padding: 10px 14px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
