@@ -16,34 +16,27 @@ export default function Home({ user ,setuser}) {
 
   const navigate=useNavigate();
 
-   useEffect(() => {
-    const fetchMangas = async () => {
-      try {
-        const response = await axios.get('/mangas');
-         const data = response.data;
+  useEffect(() => {
+  const fetchMangas = async () => {
+    try {
+      const response = await axios.get('/mangas');
+      const data = response.data;
 
       if (Array.isArray(data)) {
         setallmangas(data);
-        const search=document.getElementById("searchbar");
-        if(search.value==""){
-          setmangas(allmangas);
-        }
-        else{
-          const filteredMangas = allmangas.filter((manga) =>manga.title.toLowerCase().includes(search.value.toLowerCase()));
-          setmangas(filteredMangas);
-        }
-      }
-       else {
-        console.log(data)
+        setmangas(data); // ✅ Set both directly
+      } else {
         console.error("Expected array but got:", data);
-        setmangas([]); // fallback to empty array
+        setmangas([]);
       }
-      } catch (error) {
-        console.error("Error fetching mangas:", error);
-      }
-    };
-    fetchMangas();
-  }, []);
+    } catch (error) {
+      console.error("Error fetching mangas:", error);
+    }
+  };
+
+  fetchMangas();
+}, []); // ✅ Only run once on mount
+
 
   function viewchaptershandler(id){
         navigate(`/manga/${id}`, {
